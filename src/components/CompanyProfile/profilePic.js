@@ -20,7 +20,7 @@ class ProfilePic extends Component {
     this.setState({
       uploadedPic: files[0],
       headers: {
-        Authorization: "Basic " + (CLOUD_KEY + ":" + CLOUD_API)
+        "Access-Control-Allow-Origin": CLOUD_UPLOAD
       }
     });
 
