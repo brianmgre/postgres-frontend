@@ -9,18 +9,21 @@ const Jobs = props => {
       <div className="each-job">
         <div className="left-side">
           <h3 id="job-title">
-            Junior Front End Developer {/* replce with {props.job.title} */}
+            {props.job.title} {/* replce with {props.job.title} */}
           </h3>
           <h3 className="spacing"> - </h3>
           <h3>
-            Sensor Concepts Inc. {/* replce with {props.job.company_name} */}
+            {props.job.company_name}{" "}
+            {/* replce with {props.job.company_name} */}
           </h3>
           <h3 className="spacing"> - </h3>
-          <h3>$70,000 {/* replce with {props.job.salary} */}</h3>
+          <h3>
+            {props.job.salar} {/* replce with {props.job.salary} */}
+          </h3>
         </div>
         <div className="right-side">
           <h3>
-            1/14
+            {props.job.created_at}
             {/* replce with {props.job.date??? (note sure what date is called)} */}
           </h3>
         </div>

@@ -46,7 +46,7 @@ class JobsContainer extends Component {
   };
 
   render() {
-    console.log("click", this.handleInput);
+    console.log("click", this.state.jobs);
     console.log("Search", this.state.search);
     return (
       <div className="jobs-container">
@@ -58,7 +58,7 @@ class JobsContainer extends Component {
             search={this.state.search}
           />
         </div>
-        <Jobs /> {/* Temporarily added <Jobs /> component to fix styling */}
+        {/* <Jobs /> Temporarily added <Jobs /> component to fix styling */}
         <JobList
           jobs={
             this.state.searchJobs.length > 0
