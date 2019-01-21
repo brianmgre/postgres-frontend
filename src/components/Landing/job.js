@@ -8,27 +8,16 @@ const Jobs = props => {
     <Link className="job-links" to="/">
       <div className="each-job">
         <div className="left-side">
-          <h3 id="job-title">
-            {props.job.title} {/* replce with {props.job.title} */}
-          </h3>
+          <h3 id="job-title">{props.job.title}</h3>
           <h3 className="spacing"> - </h3>
-          <h3>
-            {props.job.company_name}{" "}
-            {/* replce with {props.job.company_name} */}
-          </h3>
+          <h3>{props.job.company_name} </h3>
           <h3 className="spacing"> - </h3>
-          <h3>
-            {props.job.salar} {/* replce with {props.job.salary} */}
-          </h3>
+          <h3>{props.job.salar}</h3>
         </div>
         <div className="right-side">
-          <h3>
-            {props.job.created_at}
-            {/* replce with {props.job.date??? (note sure what date is called)} */}
-          </h3>
+          <h3>{props.job.created_at}</h3>
         </div>
       </div>
-      {/* delete bottom divs once data is connected */}
       <div className="each-job">
         <div className="left-side">
           <h3 id="job-title">Transportation Security Officer</h3>
