@@ -61,7 +61,7 @@ class ProfilePic extends Component {
           </Dropzone>
         </div>
         <div>
-          {this.state.picUrl === "" ? null : (
+          {this.state.uploadedPic === "" ? null : (
             <div>
               <p>{this.state.uploadedPic.name}</p>
               <img src={this.state.picUrl} />

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Jobs = props => {
   return (
-    <Link className="job-links" to="/">
+    <div className="job-links" to="/">
       <div className="each-job">
         <div className="left-side">
           <h3 id="job-title">{props.job.title}</h3>
@@ -41,7 +41,7 @@ const Jobs = props => {
           <h3>1/12</h3>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 
